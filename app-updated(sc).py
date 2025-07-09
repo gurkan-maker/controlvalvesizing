@@ -2001,7 +2001,7 @@ def scenario_input_form(scenario_num, scenario_data=None):
             pipe_nominal = scenario_data["pipe_d"]
             pipe_schedule = scenario_data.get("pipe_schedule", "40")
             od, wall, pipe_id = get_pipe_dimensions(pipe_nominal, pipe_schedule)
-            pipe_id = pipe_id  # Will be used in calculations
+            pipe_d = pipe_id  # Will be used in calculations
     
     return {
         "name": scenario_name,
