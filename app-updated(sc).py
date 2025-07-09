@@ -1996,6 +1996,7 @@ def scenario_input_form(scenario_num, scenario_data=None):
             # Get pipe dimensions
             od, wall, pipe_id = get_pipe_dimensions(pipe_nominal, pipe_schedule)
             st.caption(f"Selected pipe: {pipe_nominal}\" Sch {pipe_schedule} | OD: {od:.3f}\" | ID: {pipe_id:.3f}\"")
+            pipe_d = pipe_id
         else:
             pipe_nominal = scenario_data["pipe_d"]
             pipe_schedule = scenario_data.get("pipe_schedule", "40")
